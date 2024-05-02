@@ -1,8 +1,8 @@
 
-var icon = document.getElementById("icon");
+let icon = document.getElementById("icon");
 
 icon.onclick = function(){
-document.body.classList.toggle("dark-theme");
+document.body.classList.toggle("dark-them");
 }
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0]
