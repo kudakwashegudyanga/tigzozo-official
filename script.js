@@ -2,7 +2,7 @@
 let icon = document.getElementById("icon");
 
 icon.onclick = function(){
-document.body.classList.toggle("dark-them");
+document.body.classList.toggle("dark-theme");
 }
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0]

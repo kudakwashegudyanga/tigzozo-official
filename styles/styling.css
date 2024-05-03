@@ -1,0 +1,985 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: josefin sans;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* BILBOARD SECTION */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-pic {
+  margin-left: 40px;
+  padding-top: 7px;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding-top: 22px;
+  display: block;
+  font-size: 20px;
+  color: black;
+  color: var(--secondary-color);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  color: black;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  border-radius: 12px;
+}
+
+#icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 14px;
+}
+
+.bilboard-section {
+  background-color: var(--primary-color);
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+.playing-pic {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  color: var(--secondary-color);
+}
+
+.tick-pic {
+  width: 37px;
+  height: 37px;
+  margin-right: 20px;
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.discover-more {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(127, 0, 156);
+  color: white;
+  border: none;
+  margin-right: 20px;
+}
+
+.booking-session {
+  width: 140px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: 4px solid rgb(127, 0, 156);
+}
+
+.bttons {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.playbutton-text {
+  color: rgb(127, 0, 156);
+}
+
+.bilboard-images {
+  display: flex;
+  gap: 20px;
+}
+
+.bilboard-images img {
+  width: 210px;
+  height: 520px;
+}
+
+.grid1 {
+  margin-top: 90px;
+}
+
+.bilboard-text {
+  padding-top: 150px;
+}
+
+/* THE ABOUT SECTION */
+.about-tigzozo-section {
+  padding-top: 150px;
+  background-color: var(--primary-color);
+}
+
+.about-ptext {
+  margin-bottom: 50px;
+}
+
+.two-about-pics {
+  display: flex;
+}
+
+.twokids-pic {
+  width: 280px;
+  height: 450;
+}
+
+.dropped-pic {
+  width: 280px;
+  height: 450px;
+  padding-top: 120px;
+  margin-left: 209px;
+}
+
+.stage-dance {
+  background-image: url("../images/Rectangle 15.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 470px;
+  height: 440px;
+  position: relative;
+}
+
+.overlay1 {
+  background-color: rgba(0, 0, 0, 0.436);
+  width: 470px;
+  height: 440px;
+}
+
+.youtube-icon {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  bottom: 60%;
+  left: 40%;
+}
+
+.grid01 {
+  margin-left: 100px;
+}
+
+.grid02 {
+  margin-left: 190px;
+}
+
+.grid02-ptext {
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+
+.about-section-button {
+  background-color: rgb(127, 0, 156);
+  border: none;
+  width: 140px;
+  height: 44px;
+  color: white;
+}
+
+/* THE SERVICES SECTION */
+.services-section {
+  padding-top: 150px;
+  background-color: var(--primary-color);
+}
+
+.services-heading {
+  margin-bottom: 60px;
+}
+
+.three-dancers {
+  background-image: url("../images/Rectangle 27.png");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  margin-left: 40px;
+}
+
+.three-dancers-overlay {
+  width: 400px;
+  height: 630px;
+  background-color: rgba(0, 0, 0, 0.446);
+  position: relative;
+  right: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.purple-rectangle {
+  background-color: rgb(127, 0, 156);
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 400px;
+  height: 630px;
+  padding-left: 30px;
+  padding-top: 35px;
+  color: white;
+  line-height: 47px;
+  font-size: 24px;
+}
+
+.not {
+  background-color: white;
+  background-size: 90px;
+  position: relative;
+  left: 333px;
+  top: 20px;
+}
+
+.camera-boy {
+  background-image: url("../images/Rectangle 29.png");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+}
+
+.camera-boy-overlay {
+  width: 400px;
+  height: 630px;
+  background-color: rgba(0, 0, 0, 0.378);
+  position: relative;
+  right: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.events-text {
+  position: relative;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.next-icon {
+  position: relative;
+  left: 130px;
+}
+
+.happy-clients-section {
+  padding-top: 240px;
+  background-color: var(--primary-color);
+}
+
+.happy-clients-heading {
+  text-align: left;
+  margin-bottom: 90px;
+  margin-left: 40px;
+}
+
+.client-names {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.client-status {
+  margin-bottom: 20px;
+}
+
+.client-name {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pics-holder2 img {
+  width: 450px;
+  height: 380px;
+}
+
+.moving-left {
+  margin-left: 230px;
+}
+
+.second-division {
+  margin-left: 60px;
+}
+
+.instagram-section {
+  padding-top: 70px;
+  background-color: var(--primary-color);
+  height: 950px;
+}
+
+.instagram-section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+span {
+  font-style: italic;
+  font-family: "great vibes";
+  font-size: 40px;
+}
+
+.instagram-pics {
+  display: flex;
+}
+
+.instagram-pics img {
+  width: 200px;
+  height: 430px;
+}
+
+.drop-image {
+  padding-top: 100px;
+}
+
+.hashtag {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.follow-us-button {
+  margin-left: 593px;
+  width: 110px;
+  height: 40px;
+  background-color: rgb(127, 0, 156);
+  border: none;
+  color: white;
+}
+
+.footer-rectangle {
+  width: 100%;
+  /* height: 300px; */
+  background-color: rgb(127, 0, 156);
+  padding-bottom: 40px;
+}
+
+.logo-background {
+  background-color: white;
+  width: 160px;
+  height: 60px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.logo-pic2 {
+  width: 150px;
+  height: 60px;
+}
+
+.facebook-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+}
+
+.instagram-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-sizing {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.about-anchor {
+  color: white;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.help-anchor {
+  color: white;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.in-touch-anchor {
+  color: white;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.ptext-color p {
+  color: white;
+  font-size: 20px;
+}
+
+.anchor-text {
+  padding-top: 40px;
+}
+
+.about-spacing {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.help-spacing {
+  margin-right: 20px;
+}
+
+/* MENU small devices (potrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .toggle-button {
+    display: flex;
+    height: 18px;
+    position: absolute;
+    top: 22px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+/* large screens (ipad and tablets, less than 992) media query */
+@media (max-width: 992px) and (min-width: 577px) {
+  p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  /*  NAV BAR   */
+  #icon {
+    margin-right: 20px;
+  }
+  .logo-pic {
+    margin-left: 20px;
+    width: 200px;
+  }
+  /*  HERO PAGE   */
+  .bilboard-text {
+    padding-top: 10px;
+  }
+  .bilboard-images img {
+    width: 160px;
+    height: 450px;
+  }
+  .grid1 {
+    margin-top: 120px;
+  }
+  /* THE ABOUT SECTION */
+  .about-tigzozo-section {
+    padding-top: 60px;
+  }
+  .containing-about-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-ptext {
+    margin-bottom: 30px;
+  }
+  .two-about-pics {
+    display: flex;
+    flex-direction: row;
+  }
+  .twokids-pic {
+    width: 280px;
+    height: 330px;
+  }
+  .dropped-pic {
+    width: 280px;
+    height: 460px;
+    padding-top: 120px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+  }
+  .grid01 {
+    margin-left: 30px;
+  }
+  .grid02 {
+    margin-left: 0px;
+    padding-left: 140px;
+  }
+  .stage-dance {
+    width: 550px;
+    height: 430px;
+  }
+  .overlay1 {
+    width: 550px;
+    height: 430px;
+  }
+  /* SERVICES PAGE */
+  .services-section {
+    padding-top: 90px;
+  }
+  .services-heading {
+    margin-bottom: 40px;
+  }
+  .pics-holder {
+    justify-content: center;
+  }
+  .three-dancers {
+    width: 355px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .three-dancers-overlay {
+    width: 355px;
+  }
+  .next-icon {
+    position: relative;
+    left: 108px;
+  }
+  .purple-rectangle {
+    width: 355px;
+    height: 630px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+  }
+  .not {
+    background-color: white;
+    position: relative;
+    left: 288px;
+    top: 19px;
+  }
+  .camera-boy {
+    width: 355px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .camera-boy-overlay {
+    width: 355px;
+    height: 630px;
+  }
+  /* THE HAPPY CLIENTS SECTION */
+  .happy-clients-section {
+    padding-top: 70px;
+  }
+  .happy-clients-heading {
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  .moving-left {
+    margin-left: 100px;
+  }
+  .pics-holder2 img {
+    width: 450px;
+    height: 380px;
+  }
+  .second-division {
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+  /*  INSTAGRAM SECTION   */
+  .instagram-pics img {
+    width: 220px;
+    height: 520px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .insta-top-margin {
+    margin-top: 50px;
+  }
+  .hashtag {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .follow-us-button {
+    margin-left: 295px;
+    width: 110px;
+    height: 40px;
+  }
+  /* FOOTER SECTION  */
+  .footer-rectangle {
+    width: 100%;
+    height: 560px;
+    margin-top: 750px;
+    margin-bottom: 0px;
+  }
+  .logo-background {
+    background-color: white;
+    width: 130px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    align-content: center;
+  }
+  .logo-pic2 {
+    width: 120px;
+    height: 50px;
+  }
+  .facebook-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .instagram-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .icon-sizing {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .ptext-color p {
+    font-size: 18px;
+  }
+  .anchor-text {
+    padding-top: 30px;
+  }
+  .about-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .help-spacing {
+    margin-right: 0px;
+  }
+}
+/* small devices (potrait phones, less than 576px) */
+@media (max-width: 576px) {
+  p {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  /*  NAV BAR   */
+  .logo-pic {
+    margin-left: 0px;
+    width: 120px;
+  }
+  #icon {
+    margin-left: 150px;
+  }
+  .toggle-button {
+    display: flex;
+    height: 18px;
+    position: absolute;
+    top: 22px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  /*  HERO PAGE   */
+  .bilboard-text {
+    padding-top: 10px;
+  }
+  .bilboard-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bilboard-images img {
+    width: 250px;
+    height: 600px;
+  }
+  .grid1 {
+    margin-top: 10px;
+  }
+  .two-about-pics img {
+    display: flex;
+    flex-direction: row;
+  }
+  .dropped-pic {
+    padding-top: 120px;
+    margin-bottom: 100px;
+    height: 490px;
+  }
+  .grid02 {
+    margin-left: 100px;
+  }
+  /* THE ABOUT SECTION */
+  .about-tigzozo-section {
+    padding-top: 60px;
+  }
+  .about-ptext {
+    margin-bottom: 30px;
+  }
+  .grid01 {
+    margin-left: 0px;
+  }
+  .twokids-pic {
+    width: 174px;
+    height: 235px;
+  }
+  .dropped-pic {
+    width: 174px;
+    height: 335px;
+    padding-top: 100px;
+    margin-left: 0px;
+  }
+  .grid02 {
+    margin-left: 0px;
+  }
+  .stage-dance {
+    width: 350px;
+    height: 400px;
+  }
+  .overlay1 {
+    width: 350px;
+    height: 400px;
+  }
+  /* SERVICES PAGE */
+  .services-section {
+    padding-top: 90px;
+  }
+  .services-heading {
+    margin-bottom: 40px;
+  }
+  .three-dancers {
+    width: 355px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .three-dancers-overlay {
+    width: 355px;
+  }
+  .next-icon {
+    position: relative;
+    left: 106px;
+  }
+  .purple-rectangle {
+    margin-left: 10px;
+    width: 355px;
+    height: 630px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+  }
+  .not {
+    background-color: white;
+    position: relative;
+    left: 288px;
+    top: 19px;
+  }
+  .camera-boy {
+    width: 355px;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  .camera-boy-overlay {
+    width: 355px;
+    height: 630px;
+  }
+  /* THE HAPPY CLIENTS SECTION */
+  .happy-clients-section {
+    padding-top: 70px;
+  }
+  .happy-clients-heading {
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  .moving-left {
+    margin-left: 0px;
+  }
+  .pics-holder2 img {
+    width: 355px;
+    height: 300px;
+  }
+  .second-division {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  /*  INSTAGRAM SECTION   */
+  .instagram-pics img {
+    width: 220px;
+    height: 520px;
+    margin-left: 65px;
+    margin-bottom: 30px;
+  }
+  .drop-image {
+    padding-top: 0px;
+  }
+  .hashtag {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .follow-us-button {
+    margin-left: 120px;
+    width: 110px;
+    height: 40px;
+  }
+  /* FOOTER SECTION  */
+  .footer-rectangle {
+    width: 100%;
+    height: 900px;
+    margin-top: 2700px;
+    margin-bottom: 0px;
+  }
+  .logo-background {
+    background-color: white;
+    width: 130px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    align-content: center;
+  }
+  .logo-pic2 {
+    width: 120px;
+    height: 50px;
+  }
+  .facebook-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .instagram-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .icon-sizing {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .ptext-color p {
+    font-size: 18px;
+  }
+  .anchor-text {
+    padding-top: 40px;
+  }
+  .about-spacing {
+    margin-left: 0px;
+  }
+  .help-spacing {
+    margin-right: 0px;
+  }
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=styling.css.map */
