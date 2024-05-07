@@ -66,10 +66,18 @@ body{
     padding-top: 7px;
 }
 .navbar-links ul{
+    .services-ptext{
+        color: purple;
+    }
     display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 20%;
+    gap: 20px;
 }
 .navbar-links li{
     list-style: none;  
+    
 }
 .navbar-links li a{
     text-decoration: none;
@@ -89,6 +97,10 @@ body{
     width: 30px;
     height: 21px;
     color: black;
+}
+.pod{
+    display: flex;
+    align-items: center;
 }
 .toggle-button .bar{
     height: 4px;
@@ -124,14 +136,14 @@ h3{
 }
 
 .playing-pic{
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
     color: var(--secondary-color);
 }
 .tick-pic{
-    width: 37px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
     color: var(--secondary-color);
 
@@ -146,7 +158,7 @@ p{
     background-color: rgb(127, 0, 156);
     color: white;
     border: none;
-    margin-right: 20px;
+    // margin-right: 20px;
 }
 .booking-session{
     width: 140px;
@@ -155,10 +167,29 @@ p{
     color: black;
     border: 4px solid rgb(127, 0, 156);
 }
+.pod{
+    background-color: green;
+    display: flex;
+    text-align: center;
+    margin: 2%;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    #purple{
+        color: rgb(127, 0, 156);
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
 .bttons{
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
 .playbutton-text{
     color: rgb(127, 0, 156);
 }
@@ -174,7 +205,11 @@ p{
     margin-top: 90px;
 }
 .bilboard-text{
-    padding-top: 150px;
+    padding-top: 100px;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
 }
 /* THE ABOUT SECTION */
 .about-tigzozo-section{
@@ -878,7 +913,7 @@ span{
 /* FOOTER SECTION  */
     .footer-rectangle{
         width: 100%;
-        height: 900px;
+        // height: 900px;
         margin-top: 2700px;
         margin-bottom: 0px;
     }
