@@ -1,0 +1,2120 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+@font-face {
+    font-family:"GreatVibes-Regular-webfont" ;
+    src: url("GreatVibes-Regular-webfont.ttf");
+}
+@font-face {
+    font-family:"JosefinSans-Regular" ;
+    src: url("JosefinSans-Regular.ttf");
+}
+
+$base-fonthone:45px;
+$base-fonthtwo: 21px;
+$base-fonttwentypx:20px;
+$base-fonttext:18px;
+.munehamb{
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-family:"JosefinSans-Regular" ;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      i{
+        margin: 10px;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+    
+      span{
+       
+        font-family:"JosefinSans-Regular" ;
+      }
+      a{
+        font-family: Montserrat;
+      }
+      .logbanner{
+        .menubger{
+            
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+            
+        }
+
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        background-color:#742296;
+      }
+}
+
+  
+  @media screen and (min-width: 950px) {
+    .munehamb{
+        display: none;
+    }
+    }
+
+    body {
+    
+        background-color: white;
+        color: black;
+       
+      }
+      
+      .dark-mode {
+      
+        background-color: black;
+        color: white;
+
+      
+        .navigation .navbar a {
+            color: white;
+        }
+  
+      }
+
+
+
+
+
+
+
+
+
+
+.navigation{
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .nav{
+        width: 580px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .navbar{
+        a{
+            font-weight: 600;
+            color: black;
+            font-family:"JosefinSans-Regular" ;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+        span{
+            color: #742296;
+        }
+       
+    }
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            width: 65%;
+        }
+    }
+    
+    .light{
+        margin-right: 115px;
+        display: flex;
+        justify-content: start;
+        position: relative;
+    
+        img{
+            object-fit: contain;
+            width: 64%;
+        }
+    }
+}
+
+#home{
+    padding-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    .buttons{
+        padding-bottom: 40px;
+        .book{
+            font-weight: 600;
+            margin-left: 20px;
+        }
+      
+    }
+    .one,.three{
+        position: relative;
+        top: 50px;
+        
+    }
+    p{
+        font-size: $base-fonttext;
+        font-family:"JosefinSans-Regular" ;
+        
+    }
+    .our{
+
+        color: #742296;
+        font-size: $base-fonttext;
+        font-family:"JosefinSans-Regular" ;
+        padding-bottom: 22px;
+    }
+    h1{
+        font-family:"JosefinSans-Regular" ;
+        font-size: $base-fonthone;
+        font-weight: bolder;
+    }
+    .twentypx{
+        font-family:"JosefinSans-Regular" ;
+        padding-bottom: 40px;
+    padding-top: 15px;
+        font-size: $base-fonttwentypx;
+    }
+    
+    .htext{
+        width: 590px;
+        position: relative;
+        top: 15vh;
+       
+    }
+    img{
+        object-fit: cover;
+        margin-left: 12px;
+        height: 100%;
+        width: 21%;
+    }
+    .one,.two,.three,.four{
+        object-fit: cover;
+    }
+    .images{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .more{
+        font-weight: 600;
+        font-family:"JosefinSans-Regular" ;
+        text-decoration: none;
+        padding: 11px;
+        background-color: #742296;
+        color: white;
+    }
+    .book{
+        text-decoration: none;
+         padding: 8px;
+        border: 4px solid #742296  ;
+        color: black;
+        // font-family:"JosefinSans-Regular" ;
+    }
+}
+
+#media{
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    .project{
+        object-fit: cover;
+        height: 260px;
+
+    }
+
+    .twoimgs{
+        margin-top: 20px;
+        .tech{
+            object-fit: cover;
+            position: relative;
+            top: 58px;
+            height: 260px;
+             right: 4px;
+            }
+    }
+h3{
+    font-size: $base-fonthtwo;
+    font-family:"JosefinSans-Regular" ;
+}
+p{
+    line-height: 1.3;
+    width: 395px;
+    font-size: $base-fonttext;
+    font-family:"JosefinSans-Regular" ;
+}
+    .play{
+       
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .click{
+        .clickme{
+            height: 9%;
+        }
+        .watchvideo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("images/WhatsApp Image 2024-05-02 at 16.24.13_11af13b4.jpg");
+            height: 321px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        p{
+            font-size: $base-fonttext;
+            font-family:"JosefinSans-Regular" ;
+            margin-top: 20px;
+            margin-bottom: 29px;
+        }
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 123px;
+        background-color: #742296;
+      
+        a{
+            font-weight: 600;
+            font-family:"JosefinSans-Regular" ;
+            color: white;
+            text-decoration: none;
+            padding: 11px;
+        }
+        
+
+      }
+   
+}
+
+#services{
+    margin-left: 80px;
+    margin-right: 80px;
+margin-top: 100px;
+.allservices{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-size: $base-fonthtwo;
+    font-family:"JosefinSans-Regular" ;
+    margin-bottom: 45px;
+}
+img{
+    object-fit: cover;
+
+}
+
+
+.party{
+   
+   
+    background-image: url("images/IMG-20240502-WA0062.jpg");
+    height: 480px;
+    width: 352px;
+    margin-left: 22px;
+    background-size: cover;
+   
+
+    .two{
+        object-fit: cover;
+        top: 65.5vh;
+    position: relative;
+    float: inline-end;
+    height: 8%;
+    
+    }
+    
+ p{ 
+    font-weight: 600;
+    color: white;
+    font-size: 26px;
+    font-family:"JosefinSans-Regular" ;
+    top: 71vh;
+    position: relative;
+    text-align: center;
+ }  
+}
+
+.digital{
+    .line{
+        margin-top: 19px;
+        position: absolute;
+        width: 64px;
+        border: 1px solid white;    
+
+    }
+    img{
+        top: 70vh;
+    position: relative;
+    float: inline-end;
+    }
+    h3{
+        margin-bottom: 22px;
+        font-size: $base-fonthtwo;
+        font-family:"JosefinSans-Regular" ;
+        position: relative;
+        top: 26px;
+        padding-left: 30px;
+    }
+    
+        p{
+font-size: $base-fonttext;
+            font-family:"JosefinSans-Regular" ;
+            margin-top: 19px;
+            position: relative;
+            top: 26px;
+            padding-left: 30px;
+        }
+    
+color: white;
+    background-color: #742296;
+    width: 340px;
+    margin-left: 22px;
+}
+.camera{
+background-image: url("images/IMG-20240502-WA0064.jpg");
+p{
+    font-weight: 600;
+    font-size: 28px;
+    font-family:"JosefinSans-Regular" ;
+    position: relative;
+    top: 71vh;
+    text-align: center;
+    color: white;
+}
+    img{
+        height: 8%;
+        position: relative;
+        top: 69.8vh;
+        float: inline-end;
+        object-fit: cover;
+    }
+    background-size: cover;
+    height: 480px;
+    width: 352px;
+    margin-left: 13px;
+}
+
+}
+
+#clients{
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    h3{
+        font-size: $base-fonthtwo;
+        font-family:"JosefinSans-Regular" ;
+    }
+    h3{
+        font-size: $base-fonthtwo;
+        font-family:"JosefinSans-Regular" ;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        
+        font-size: 18px;
+    width: 344px;
+        font-family:"JosefinSans-Regular" ;
+    }
+    .prag{
+        font-family:"JosefinSans-Regular" ;
+        margin-bottom: 20px;
+    }
+
+    .company{
+        
+        position: relative;
+        top: 45px;
+       
+.oneimg{
+    img{
+        height: 11%;
+    }
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    width: 460px;
+    height: 342px;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url("images/IMG-20240502-WA0058.jpg");
+}
+
+    }
+    .bride{
+        position: relative;
+    bottom: 10px;
+
+        .twoimg{
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+            background-image: url("images/services4.jpg");
+            object-fit: cover;
+            width: 460px;
+            height: 343px;
+            background-size: cover;
+            img{
+                height: 11%;
+            }
+        }
+
+    }
+    .tigcomp{
+        justify-content: space-evenly;
+        display: flex;
+      }
+}
+
+.pics-instagram{
+    margin-top: 105px;
+    margin-left: 80px;
+    margin-right: 80px;
+    .head{
+        h2{
+            font-size: $base-fonthtwo;
+            font-family:"JosefinSans-Regular" ;
+            margin-left: 25px;
+        }
+        .Instagram{
+            font-family:"GreatVibes-Regular-webfont" ;
+            font-size: $base-fonthtwo;
+            margin-left: 25px;
+        }
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    .images{
+        justify-content: center;
+        display: flex;
+        img{
+            object-fit: cover;
+            height: 280px;
+            margin-left: 12px;
+        }
+        .two,.four,.six{
+            position: relative;
+            top: 69px;
+        }
+        h3{
+            font-size: 22px;
+            font-family:"JosefinSans-Regular" ;
+        }
+    }
+
+    .tighbutoon{
+        
+        padding-top: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .button{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 113px;
+    background-color: #742296;
+    padding: 10px;
+    a{
+        font-weight: 600;
+        font-family:"JosefinSans-Regular" ;
+        color: white;
+        text-decoration: none;
+    }
+
+        }
+        h3{
+            font-family:"JosefinSans-Regular" ;
+            font-size: $base-fonthtwo;
+        }
+
+    }
+
+
+}
+
+#footer{
+    background-color: #742296;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+
+    .copy{ 
+        color: white;
+    }
+
+    h3{
+        font-weight: bolder;
+        font-size: $base-fonthtwo;
+        font-family:"JosefinSans-Regular" ;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .line{
+    margin-top: 20px;
+    position: absolute;
+    width: 88px;
+    border: 1px solid white;
+     }
+
+     .line2{
+        margin-top: 20px;
+        position: absolute;
+        width: 123px;
+        border: 1px solid white;
+         }
+         
+         .line3{
+            margin-top: 20px;
+            position: absolute;
+            width: 123px;
+            border: 1px solid white;
+             }
+
+    p{
+        font-size: 18px;
+        font-family:"JosefinSans-Regular" ;
+        color: white;
+        margin-top: 15px;
+    }
+    .fa-tw-lo{
+        p{
+            line-height: 1.4;
+        }
+        img{
+            width: 130px;
+        }
+
+        .icons{
+            a{
+                text-decoration: none;
+            }
+            margin-top: 6px;
+            .cone{
+                font-size: 24px;
+                color: white;
+            }
+            .cone1{
+                margin-left: 13px;
+                font-size: 24px;
+                color: white;
+            }
+           
+        }
+
+    }
+    .about{
+        a{
+            text-decoration: none;
+        }
+    }
+
+
+}
+
+
+
+
+@media  (max-width: 568px) {
+
+    .munehamb{
+        .overlay{
+            background-color: rgb(0, 0, 0);
+        }
+        span{
+            color: white;
+        }
+       
+    .logbanner{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        logo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+width: 40%;
+            }  
+        }
+   
+
+        }
+        .overlay-content{
+            top: 16%;
+        }
+
+        .overlay{
+            .light-one{
+                padding-top: 10px;
+        padding-left: 11px;
+                width: 10%;
+            }
+            .closebtn {
+                position: absolute;
+                top: -18px;
+                right: 8px;
+                font-size: 71px;
+            }
+        } 
+        
+    }
+
+
+
+
+
+.navigation{
+   display: none;
+
+}
+#home{
+    overflow: hidden;
+    margin-left: 20px;
+    padding-bottom: 98px;
+    padding-top: 0px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  .twentypx{
+    padding-top: 8px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }  
+ img {
+    object-fit: cover;
+    margin-left: 0px;
+    height: 100%;
+    width: 23%;
+}
+  .images{
+    display: flex;
+    justify-content: space-between;
+    top: 7.3vh;
+position: relative;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+  .buttons{
+   
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    display: flex;
+    a{
+        margin-left: 2px;
+    }
+    .more{
+        padding: 14px;
+        font-size: 10px;
+      }
+      .book{
+        margin-left: 15px;
+        padding: 11px;
+        font-size: 10px;
+      }
+
+  }
+  p{
+    font-size: 10px;
+  }
+
+  .our{
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .htext{
+    width: 357px;
+    position: relative;
+    top: 5vh;
+  }
+
+ 
+}
+
+
+
+#media{
+    
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    h3{
+        font-size: 18px;
+    }
+    p{
+        // font-size: 10px;
+        width: 339px;
+        font-size: 10px;
+    }
+    .play{
+       margin-top: 8px;
+        flex-direction: column;
+    }
+    .twoimgs {
+        margin-top: 15px;
+        .tech {
+            display: none;
+            right: 0px;
+           top: 67px;
+            width: 170px;
+            height: 220px;
+        }
+    }
+   
+    .twoimgs,.project{
+        display: none;
+    }
+    .twoimgs{
+        display: flex;
+    }
+    .click{
+       
+        p{
+            font-size: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        padding-top: 0px;
+
+        .watchvideo{
+            height: 299px;
+            background-size: contain;
+        }
+    }
+    .button{
+        border-radius: 0px;
+        width: 99px;
+        a{
+            padding: 14px;
+            font-size: 10px;
+        }
+    }
+    
+}
+
+
+
+#services{
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    .allservices{
+        display: flex;
+        flex-direction: column;
+    }
+    h3{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .party{
+        width: 334px;
+        margin-left: 0px;
+        p{
+            top: 66vh; font-size: 20px;
+        }
+        .two{
+            display: none;
+        }
+    }
+    .digital{
+        width: 334px;
+        margin-top: 10px;
+        height: 480px;
+        .line {
+            margin-top: 12px;
+            width: 40px;
+        }
+        p{
+            margin-top: 23px;
+            font-size: 10px;
+        }
+        h3{
+            font-size: 15px;
+        }
+        margin-left: 0px;
+        img{
+            display: none;
+        }
+    }
+    .camera{
+        margin-top: 10px;
+        p{
+            top: 66vh;
+        font-size: 20px;
+        }
+        width: 334px;
+        margin-left: 0px;
+        img{
+            display: none;
+        }
+    }
+}
+
+
+#clients{
+    margin-top: 40px;
+margin-left: 20px;
+margin-right: 20px;
+    overflow: hidden;
+    .tigcomp{
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .prag{
+        margin-bottom: 8px;
+    }
+    p{
+        width: 335px;
+        font-size: 10px;
+    }
+    h3{
+        margin-top: 15px;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .company {
+        top: 15px;
+        .oneimg{
+        height: 251px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 335px;
+       
+        img{
+            display: none;
+        }
+    }
+}
+    .bride{
+        top: 31px;
+        .twoimg {
+
+            height: 286px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 335px;
+            img{
+                display: none;
+            }
+            
+        }
+    }
+}
+
+
+.pics-instagram{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    .images{
+        display: flex;
+        justify-content: space-between;
+    }
+    .head{
+        margin-bottom: 25px;
+        h2{
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .Instagram{
+            font-size: 18px;
+    margin-left: 11px;
+        }
+    }
+    .tighbutoon {
+        padding-top: 83px;
+        h3 {
+            font-size: 15px;
+        }
+        .button{margin-top: 15px;
+            padding: 0px;
+            width: 99px;
+            a{
+                padding: 14px;
+                font-size: 10px;
+            }
+        }
+    }
+    
+    .images{
+        .one,.six,.five{
+            display: none;
+        }
+        img{
+            margin-left: 0px;
+            height: 235px;
+        }
+    }
+}
+
+#footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    .fa-tw-lo{
+        width: 125px;
+        p{
+            font-size: 10px;
+        }
+        img{
+            width: 78px;
+        }
+        .icons {
+            margin-top: 8px;
+            .cone{
+                font-size: 18px;
+            }
+            .cone1{
+                font-size: 18px;
+                margin-left: 6px;
+            }
+        }
+    }
+    h3{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .about{
+        margin-top: 11px;
+        height: 123px;
+        width: 159px;
+    }
+    .line{
+     
+        margin-top: 16px;
+        width: 71px;
+    }
+    .line3{
+        width: 100px;
+        margin-top: 18px;
+        
+       
+    }
+    .line2{
+        width: 100px;
+        margin-top: 19px;
+        
+    }
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 569px) and (max-width: 768px){
+
+    .munehamb{
+.overlay{
+    background-color: rgb(0, 0, 0);
+}
+
+        .logbanner{
+            logo{
+                
+                    align-items: center;
+                    justify-content: flex-start;
+                    display: flex;
+                
+                img{
+                    width: 50%;
+                }
+            }
+            .menubger {
+                font-size: 35px;
+                color: white;
+                cursor: pointer;
+            }
+         }
+         .logbanner {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .overlay-content {
+            top: 12%;
+        }
+
+        .overlay{
+            .closebtn{
+                top: -20px;
+    right: 7px;
+    font-size: 81px;
+            }
+            .light-one{
+                padding-top: 12px;
+                width: 6%;
+                padding-left: 20px;
+            }
+        }
+           
+        
+    }
+    
+     
+
+    .navigation{
+        display: none;
+     
+     }
+     #home{
+         overflow: hidden;
+         margin-left: 20px;
+         padding-bottom: 132px;
+         padding-top: 0px;
+         margin-right: 20px;
+         display: flex;
+         flex-direction: column;
+       .twentypx{
+       
+         padding-top: 12px;
+         padding-bottom: 30px;
+         font-size: 14px;
+       }  
+       .htext{
+        position: relative;
+        top: 4vh;
+       }
+      img {
+         object-fit: cover;
+         margin-left: 0px;
+         height: 100%;
+         width: 23%;
+     }
+       .images{
+        display: flex;
+        justify-content: space-between;
+         top: 8vh;
+     position: relative;
+       }
+     
+       h1{
+         font-size: 32px;
+       }
+       .buttons{
+         padding-bottom: 30px;
+         justify-content: flex-start;
+         display: flex;
+         a{
+             margin-left: 2px;
+         }
+         .more{
+             padding: 15px;
+             font-size: 12px;
+           }
+           .book{
+             margin-left: 15px;
+             padding: 12px;
+             font-size: 12px;
+           }
+     
+       }
+       p{
+         font-size: 13px;
+       }
+     
+       .our{
+         font-size: 13px;
+         padding-bottom: 10px;
+       }
+     
+      
+     }
+     
+     
+     
+     #media{
+         
+         margin-top: 100px;
+         margin-left: 20px;
+         margin-right: 20px;
+         overflow: hidden;
+         h3{
+             font-size: 18px;
+         }
+         p{
+             width: 339px;
+             font-size: 13px;
+         }
+         .play{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            
+         }
+         .twoimgs .tech {
+            
+             right: 0px;
+             top: 86px;
+             height: 225px;
+         }
+         .twoimgs,.project{
+            object-fit: contain;
+             height: 213px;
+         }
+         .twoimgs{
+             display: flex;
+         }
+         .click{
+             p{
+                font-size: 13px;
+                 margin-bottom: 20px;
+             }
+             .watchvideo{
+                 height: 303px;;
+                width: 340px;
+                background-size: contain;
+             }
+        
+         }
+         .button{
+             border-radius: 0px;
+             width: 113px;
+             a{
+                 padding: 14px;
+                 font-size: 12px;
+             }
+         }
+
+         
+     }
+     
+     
+     
+     #services{
+         overflow: hidden;
+         margin-top: 100px;
+         margin-left: 20px;
+         margin-right: 20px;
+         .allservices{
+             display: flex;
+             justify-content: space-between;
+           
+         }
+         h3{
+             font-size: 18px;
+             margin-bottom: 20px;
+         }
+         .party{
+            height: 359px;
+            width: 233px;
+             margin-left: 0px;
+             p{top: 32vh; font-size: 20px;}.two{display: none;}
+         }
+         .digital{
+            height: 359px;
+        width: 233px;
+             .line {
+                 margin-top: 13px;
+                 width: 51px;
+             }
+             p{
+                 margin-top: 17px;
+                 font-size: 13px;
+             }
+             h3{
+                margin-bottom: 0px;
+                 font-size: 18px;
+             }
+             margin-left: 0px;
+             img{
+                 display: none;
+             }
+         }
+         .camera{
+            margin-left: 0px;
+            object-fit: cover;
+            height: 359px;
+            width: 233px;
+            p{
+                top: 32vh; font-size: 20px;
+            }
+            .two{
+                display: none;
+            }
+         }
+     }
+     
+     
+     #clients{
+         margin-top: 100px;
+     margin-left: 20px;
+     margin-right: 20px;
+         overflow: hidden;
+         .tigcomp{
+             padding-bottom: 43px;
+             display: flex;
+             justify-content: space-between;
+         
+         }
+         .prag{
+             margin-bottom: 8px;
+         }
+         p{
+             width: 335px;
+             font-size: 13px;
+         }
+         h3{
+             margin-top: 20px;
+             margin-bottom: 8px;
+             font-size: 18px;
+         }
+         h2{
+             font-size: 18px;
+         }
+         .company {
+             top: 20px;
+             .oneimg{
+             height: 251px;
+             background-repeat: no-repeat;
+             background-size: contain;
+             width: 335px;
+            
+             img{
+                 display: none;
+             }
+         }
+     }
+         .bride{
+             top: 40px;
+             .twoimg {
+     
+                 height: 286px;
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 width: 335px;
+                 img{
+                     display: none;
+                 }
+                 
+             }
+         }
+     }
+     
+     
+     .pics-instagram{
+         margin-top: 100px;
+         margin-left: 20px;
+         margin-right: 20px;
+         overflow: hidden;
+         .head{
+             margin-bottom: 20px;
+             h2{
+                 margin-left: 15px;
+                 font-size: 20px;
+             }
+         }
+         .tighbutoon {
+             padding-top: 83px;
+             h3 {
+                 font-size: 18px;
+             }
+             .button{
+                 padding: 0px;
+                 width: 99px;
+                 a{
+                     padding: 14px;
+                     font-size: 12px;
+                 }
+             }
+         }
+         
+         .images{
+            justify-content: space-between;
+            display: flex;
+             img{
+                 margin-left: 0px;
+                height: 255px;
+             }
+         }
+     }
+     
+     #footer{
+         margin-top: 50px;
+         padding-top: 50px;
+         padding-bottom: 40px;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         padding-left: 20px;
+         padding-right: 20px;
+         overflow: hidden;
+         .fa-tw-lo{
+            
+             p{
+                 font-size: 12px;
+             }
+             img{
+                 width: 78px;
+             }
+         }
+         h3{
+             font-size: 18px;
+         }
+     
+         p{
+             font-size: 12px;
+             margin-top: 8px;
+         }
+         .about{
+             height: 119px;
+           
+         }
+         .line{
+             margin-top: 20px;
+             width: 82px;
+         }
+         .line3{
+             width: 110px;
+             margin-top: 20px;
+         }
+         .line2{
+             width: 103px;
+             margin-top: 20px;
+         }
+     }
+     
+     
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width:769px) and (max-width:950px){
+
+
+        .munehamb{
+.overlay{
+    background-color: rgb(0, 0, 0);
+}
+            .logbanner{
+                logo{
+                    
+                        align-items: center;
+                        justify-content: flex-start;
+                        display: flex;
+                    
+                    img{
+                        width: 52%;
+                    }
+                }
+                .menubger {
+                    font-size: 35px;
+                    color: white;
+                    cursor: pointer;
+                }
+             }
+             .logbanner {
+                margin-bottom: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .overlay-content {
+                top: 12%;
+            }
+    
+            .overlay{
+                .light-one{
+                    padding-top: 12px;
+                    width: 6%;
+                    padding-left: 20px;
+                }
+                .closebtn{
+                    top: -20px;
+        right: 18px;
+        font-size: 81px;
+                }
+            }
+        }
+        
+         
+    
+
+
+
+        .navigation{
+            display: none;
+         
+         }
+         #home{
+             overflow: hidden;
+             margin-left: 30px;
+             padding-bottom: 71px;
+             padding-top: 0px;
+             margin-right: 30px;
+             display: flex;
+           
+           .twentypx{
+           
+             padding-top: 8px;
+             padding-bottom: 20px;
+             font-size: 15px;
+           }  
+           .htext{
+            width: 748px;
+            position: relative;
+            top: 6vh;
+           }
+          img {
+             object-fit: cover;
+             margin-left: 0px;
+             height: 107%;
+             width: 24%;
+         }
+           .images{
+            display: flex;
+            justify-content: space-between;
+            
+           }
+         
+           h1{
+             font-size: 30px;
+           }
+           .buttons{
+             padding-bottom: 20px;
+             justify-content: flex-start;
+             display: flex;
+             a{
+                 margin-left: 2px;
+             }
+             .more{
+                 padding: 15px;
+                 font-size: 10px;
+               }
+               .book{
+                 margin-left: 15px;
+                 padding: 12px;
+                 font-size: 10px;
+               }
+         
+           }
+           p{
+             font-size: 14px;
+           }
+         
+           .our{
+             font-size: 14px;
+             padding-bottom: 10px;
+           }
+         
+          
+         }
+         
+         
+         
+         #media{
+             
+             margin-top: 100px;
+             margin-left: 30px;
+             margin-right: 30px;
+             overflow: hidden;
+             h3{
+                 font-size: 19px;
+             }
+
+             p{
+                 width: 339px;
+                 font-size: 14px;
+             }
+
+             .play{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 8px;
+                
+             }
+
+             .twoimgs .tech {
+                 right: 0px;
+                top: 73px;
+                 height: 241px;
+             }
+             .twoimgs,.project{
+                 height: 241px;
+             }
+             .twoimgs{
+                margin-top: 15px;
+                 display: flex;
+             }
+             .click{
+                 p{
+                    font-size: 14px;
+                    margin-top: 15px;
+                     margin-bottom: 15px;
+                 }
+            
+             }
+             .button{
+                 border-radius: 0px;
+                 width: 113px;
+                 a{
+                     padding: 14px;
+                     font-size: 10px;
+                 }
+             }
+             
+         }
+         
+         
+         
+         #services{
+             overflow: hidden;
+             margin-top: 100px;
+             margin-left: 30px;
+             margin-right: 30px;
+             .allservices{
+                 display: flex;
+                 justify-content: space-between;
+               
+             }
+             h3{
+                 font-size: 19px;
+                 margin-bottom: 20px;
+             }
+             .party{
+                height: 370px;
+                width:240px;
+                 margin-left: 0px;
+                 p{top: 28vh; font-size: 23px;}.two{display: none;}
+             }
+             .digital{
+                height:370px;
+            width: 240px;
+                 .line {
+                     margin-top: 16px;
+                     width: 56px;
+                 }
+                 p{
+                     margin-top: 15px;
+                     font-size: 14px;
+                 }
+                 h3{
+                    margin-bottom: 15px;
+                     font-size: 19px;
+                 }
+                 margin-left: 0px;
+                 img{
+                     display: none;
+                 }
+             }
+             .camera{
+                height: 370px;
+                width: 240px;
+                margin-left: 0px;
+                p{
+                    font-size: 23px;
+                    top: 28vh;
+                }
+               
+             }
+         }
+         
+         
+         #clients{
+             margin-top: 100px;
+         margin-left: 30px;
+         margin-right: 30px;
+             overflow: hidden;
+             .tigcomp{
+                 padding-bottom: 43px;
+                 display: flex;
+                 justify-content: space-between;
+             
+             }
+             .prag{
+                 margin-bottom: 8px;
+             }
+             p{
+                 width: 335px;
+                 font-size: 14px;
+             }
+             h3{
+                 margin-top: 15px;
+                 margin-bottom: 8px;
+                 font-size: 19px;
+             }
+             h3{
+                 font-size: 19px;
+             }
+             .company {
+                 top: 20px;
+                 .oneimg{
+                 height: 251px;
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 width: 335px;
+                
+                 img{
+                     display: none;
+                 }
+             }
+         }
+             .bride{
+                 top: 43px;
+                 .twoimg {
+         
+                     height: 286px;
+                     background-repeat: no-repeat;
+                     background-size: contain;
+                     width: 335px;
+                     img{
+                         display: none;
+                     }
+                     
+                 }
+             }
+         }
+         
+         
+         .pics-instagram{
+             margin-top: 100px;
+             margin-left: 30px;
+             margin-right: 30px;
+             overflow: hidden;
+             .head{
+                 margin-bottom: 20px;
+                 h2{
+                     margin-left: 15px;
+                     font-size: 21px;
+                 }
+                 .Instagram{
+                    font-size: 21px;
+                 }
+             }
+             .tighbutoon {
+                 padding-top: 83px;
+                 h3 {
+                     font-size: 19px;
+                 }
+                 .button{
+                     padding: 0px;
+                     width: 102px;
+                     a{
+                         padding: 14px;
+                         font-size: 10px;
+                     }
+                 }
+             }
+             
+             .images{
+                justify-content: space-between;
+                display: flex;
+                 img{
+                     margin-left: 0px;
+                    height: 255px;
+                 }
+             }
+         }
+         
+         #footer{
+             margin-top: 50px;
+             padding-top: 50px;
+             padding-bottom: 40px;
+             display: flex;
+             justify-content: space-between;
+             flex-wrap: wrap;
+             padding-left: 30px;
+             padding-right: 30px;
+             overflow: hidden;
+             .fa-tw-lo{
+                
+                 p{
+                     font-size: 13px;
+                 }
+                 img{
+                     width: 78px;
+                 }
+             }
+             h3{
+                 font-size: 19px;
+             }
+         
+             p{
+                 font-size: 13px;
+                 margin-top: 8px;
+             }
+             .about{
+                 height: 119px;
+               
+             }
+             .line{
+                margin-top: 17px;
+        width: 76px;
+             }
+             .line3{
+                width: 111px;
+        margin-top: 19px;
+             }
+             .line2{
+                width: 111px;
+                margin-top: 19px;
+             }
+         }
+         
+         
+    
+    
+    
+
+    }
+
+
+
+
+
+    @media (min-width:951px) and (max-width:1024px){
+        .navigation{
+            margin-bottom: 30px;
+            margin-left:27px ;
+            margin-right: 40px;
+            .logo img {
+                width: 50%;
+            }
+
+            .light{
+                margin-right: 70px;
+                img {
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                    width: 50%;
+                }
+            }
+            .navbar{
+                a{
+                    font-size: 16px;
+                }
+            }
+
+            .nav{
+                width: 456px;
+            }
+            
+        }
+        #home{
+            overflow: hidden;
+            margin-left: 40px;
+            padding-bottom: 71px;
+            padding-top: 0px;
+            margin-right: 40px;
+            display: flex;
+           
+          .twentypx{
+          
+            padding-top: 8px;
+            padding-bottom: 20px;
+            font-size: 18px;
+          }  
+          .htext{
+            width: 719px;
+           position: relative;
+           top: 6vh;
+          }
+         img {
+            object-fit: cover;
+            margin-left: 0px;
+            height: 107%;
+            width: 24%;
+        }
+          .images{
+           display: flex;
+           justify-content: center;
+           
+          }
+          .one,.two,.three,.four{
+            margin-left: 6px;
+          }
+        
+          h1{
+            font-size: 40px;
+          }
+          .buttons{
+            padding-bottom: 20px;
+            justify-content: flex-start;
+            display: flex;
+            a{
+                margin-left: 2px;
+            }
+            .more{
+                padding: 15px;
+                font-size: 12px;
+              }
+              .book{
+                margin-left: 15px;
+                padding: 12px;
+                font-size: 12px;
+              }
+        
+          }
+          p{
+            font-size: 16px;
+          }
+        
+          .our{
+            font-size: 16px;
+            padding-bottom: 10px;
+          }
+        
+         
+        }
+        
+#media{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    h3{
+    font-size: 20px;
+    }
+    .play{
+        margin-top: 20px;
+    }
+    p{
+    font-size: 16px;
+    }
+    .button{
+        border-radius: 0px;
+        width: 115px;
+        a{
+            padding: 15px;
+            font-size: 12px;
+        }
+    }
+    .twoimgs{
+        margin-top: 15px;
+    }
+    .click{
+        .watchvideo{
+            width: 360px;
+        }
+        p{
+        font-size: 16px;
+            width: 360px;
+            margin-bottom: 28px;
+            margin-top: 15px;
+        }
+    }
+}
+
+
+#services{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    h3{
+    font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .camera{
+    p{
+    top: 30vh;
+    }
+        height: 452px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        img{
+            position: relative;
+    top: 30.4vh;
+    float: inline-end;
+        }
+    }
+    .party{
+    p{
+    top: 30vh;
+    }
+        height: 452px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        .two{
+            position: relative;
+    top: 28.4vh;
+    float: inline-end;
+        }
+    }
+    .digital{
+    .line{
+    margin-top: 17px;
+    width: 60px;
+    }
+        img{
+            position: relative;
+            top: 30.4vh;
+        }
+        h3{
+        font-size: 20px;
+        }
+
+        p{
+        font-size: 16px;
+        }
+       
+    }
+}
+
+#clients{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    .tigcomp{
+        margin-top: 30px;
+    }
+    p{
+    font-size: 16px;
+    }
+    .bride .twoimg {
+        width: 401px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .company .oneimg{
+        width: 458px;
+        height: 341px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    h3{
+    font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .prag{
+        margin-bottom: 15px;
+    }
+}
+
+.pics-instagram{
+    margin:123px 40px 0px 40px ;
+    .head{
+        margin-bottom: 25px;
+        h2{
+        font-size: 23px;
+        }
+        .Instagram{
+        font-size: 23px;
+        }
+    }
+    .tighbutoon{
+    h3{
+    font-size: 20px;
+    }
+        padding-top: 95px;
+        .button{
+            margin-top: 15px;
+        }
+    }
+    
+}
+
+#footer{
+    margin-top:  40px;
+    padding: 40px 40px 50px 40px;
+
+    h3{
+    font-size: 20px;
+    }
+
+    .line3,.line2{
+    margin-top: 20px;
+    width: 112px;
+    }
+
+    .line{
+    width: 82px;
+    }
+}
+    }
+    
+
+
